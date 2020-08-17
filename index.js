@@ -28,6 +28,7 @@ function addUpTo(array, index) {
   } else {
     return array[0] || 0;
   }
+  return sum;
 }
 
 function includesNumber() {
