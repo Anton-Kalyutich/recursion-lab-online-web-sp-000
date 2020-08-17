@@ -27,7 +27,7 @@ function addUpTo(array, index) {
   if (array.length > 1) {
     sum = sum + array[0] + addUpTo(array.slice(1, index + 1));
   } else {
-    sum = sum + array[0];
+    sum += array[0];
   }
   return sum;
 }
