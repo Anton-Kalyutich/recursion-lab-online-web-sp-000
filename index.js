@@ -25,8 +25,10 @@ function isPalindrome (string) {
 function addUpTo(array, index) {
   if (array.length > 1) {
     return array[0] + addUpTo(array.slice(1, index + 1));
-  } else {
+  } else if (array.length === 1) {
     return array[0];
+  } else {
+    return 0;
   }
 }
 
