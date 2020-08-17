@@ -23,7 +23,10 @@ function isPalindrome (string) {
 }
 
 function addUpTo(array, index) {
-  if array.lrngth
+  if (array.length > 1) {
+    array[0] + addUpTo(array.slice(1, index));
+  } else {
+    return array[0] || 0;
   }
 }
 
