@@ -24,7 +24,7 @@ function isPalindrome (string) {
 
 function addUpTo(array, index) {
   if (array.length > 1) {
-    return array[0] + addUpTo(array.slice(1, index + 1));
+    let sum = array[0] + addUpTo(array.slice(1, index + 1));
   } else {
     return array[0] || 0;
   }
